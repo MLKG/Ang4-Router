@@ -13,6 +13,6 @@ export class AppComponent {
     this.router.navigate(['/']);
   }
   goProduct () {
-    this.router.navigate(['/product']);
+    this.router.navigate(['/product', 2, '曾国荣']);
   }
 }
