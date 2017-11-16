@@ -20,5 +20,4 @@ export class ProductComponent implements OnInit {
     // this.productId = this.router.snapshot.params['id'];  // 路由参数快照，不同属性页面之间显示的时候可以使用
     // this.productName = this.router.snapshot.params['name'];
   }
-
 }
