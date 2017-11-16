@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'app';
   constructor(private router: Router) {}
   goHome () {
-    this.router.navigate(['/']);
+    this.router.navigate(['/home']);
   }
   goProduct () {
     this.router.navigate(['/product', 2, '曾国荣']);

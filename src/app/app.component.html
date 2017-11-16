@@ -4,7 +4,7 @@
     Welcome to {{title}}!
   </h1>
 </div>
-<a [routerLink]="['/']">首页</a>  <!--routerLink后面是一个数组，而且是一定带上 / 的-->
+<a [routerLink]="['/home']">首页</a>  <!--routerLink后面是一个数组，而且是一定带上 / 的-->
 <a [routerLink]="['/product', 1, '曾桂林']">产品</a>
 <input type="button" value="首页" (click)="goHome()">
 <input type="button" value="产品" (click)="goProduct()">
