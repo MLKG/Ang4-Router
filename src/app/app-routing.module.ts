@@ -1,7 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { ProductComponent } from './product/product.component';
+import { Code404Component } from './code404/code404.component';
 
-const routes: Routes = [];
+// 在设置路由中，具体的路由放在最前面，通配符的路由放在最后面
+const routes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'product', component: ProductComponent },
+  { path: '**', component: Code404Component },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
