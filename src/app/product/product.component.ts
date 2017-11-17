@@ -26,12 +26,11 @@ export class ProductComponent implements OnInit {
     // this.productId = this.router.snapshot.params['id'];  // 路由参数快照，不同属性页面之间显示的时候可以使用
     // this.productName = this.router.snapshot.params['name'];
   }
-  // TODO
   toProductDesc () {
-    this.router.navigate(['../']);
+    this.router.navigate(['./'], {relativeTo: this.routerInfo});
   }
   toSeller () {
-    this.router.navigate(['../seller', 98]);
+    this.router.navigate(['./seller', 19], {relativeTo: this.routerInfo, replaceUrl: true});
   }
 }
 
