@@ -24,9 +24,9 @@ export class ProductComponent implements OnInit {
   }
   // TODO
   toProductDesc () {
-    this.router.navigate(['./']);
+    this.router.navigate(['../']);
   }
   toSeller () {
-    this.router.navigate(['./seller', 98]);
+    this.router.navigate(['../seller', 98]);
   }
 }
