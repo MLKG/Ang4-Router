@@ -8,7 +8,7 @@
 <a [routerLink]="['/product', 1, '曾桂林']">产品</a>
 <input type="button" value="首页" (click)="goHome()">
 <input type="button" value="产品" (click)="goProduct()">
-<a [routerLink]="[{outlets: { primary: 'home', aux: 'chat'}}]">开始聊天</a>  <!--routerLink后面是一个数组，而且是一定带上 / 的-->
-<a [routerLink]="[{outlets: { aux: null}}]">结束聊天</a>
+<a [routerLink]="[{outlets: { dalin: 'chat'}}]">开始聊天</a>  <!--routerLink后面是一个数组，而且是一定带上 / 的-->  <!--primary: 'home' 指定显示 chat 辅助路由时跳转到  home 的主路由-->
+<a [routerLink]="[{outlets: { dalin: null}}]">结束聊天</a>
 <router-outlet></router-outlet>
-<router-outlet name="aux"></router-outlet>
+<router-outlet name="dalin"></router-outlet>

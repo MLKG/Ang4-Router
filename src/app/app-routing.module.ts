@@ -11,7 +11,7 @@ import {ChatComponent} from './chat/chat.component';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'chat', component: ChatComponent, outlet: 'aux'},
+  { path: 'chat', component: ChatComponent, outlet: 'dalin'},
   { path: 'product/:id/:name', component: ProductComponent,
     children: [
       { path: '', component: ProductDescComponent },
