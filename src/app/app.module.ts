@@ -9,6 +9,7 @@ import { Code404Component } from './code404/code404.component';
 import { ProductDescComponent } from './product-desc/product-desc.component';
 import { SellerInfoComponent } from './seller-info/seller-info.component';
 import { ChatComponent } from './chat/chat.component';
+import { ProductService } from './shared/product.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { ChatComponent } from './chat/chat.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
