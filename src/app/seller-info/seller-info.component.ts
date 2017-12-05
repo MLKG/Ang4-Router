@@ -8,7 +8,7 @@ import {ActivatedRoute, Params} from '@angular/router';
 })
 export class SellerInfoComponent implements OnInit {
 
-  private sellerId: number;
+  sellerId: number;
   constructor(private routerInfo: ActivatedRoute) { }
 
   ngOnInit() {
