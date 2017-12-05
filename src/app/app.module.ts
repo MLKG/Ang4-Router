@@ -10,6 +10,7 @@ import { ProductDescComponent } from './product-desc/product-desc.component';
 import { SellerInfoComponent } from './seller-info/seller-info.component';
 import { ChatComponent } from './chat/chat.component';
 import { ProductService } from './shared/product.service';
+import { ProductListService } from './shared/product-list.service';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { ProductService } from './shared/product.service';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [ProductService],
+  providers: [ProductService, ProductListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
